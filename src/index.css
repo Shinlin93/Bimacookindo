@@ -111,9 +111,9 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--primary-red); outl
 .category-strip{ background:var(--paper-white); border-bottom:1px solid var(--soft-border); }
 .category-scroll{ display:flex; gap:32px; overflow-x:auto; padding:18px 0; scrollbar-width:none; }
 .category-scroll::-webkit-scrollbar{display:none;}
-.category-item{ display:flex; flex-direction:column; align-items:center; gap:8px; flex:0 0 auto; font-size:12px; font-weight:700; color:var(--warm-gray); border-bottom:2px solid transparent; padding-bottom:8px; }
-.category-item.active{ color:var(--charcoal); border-color:var(--primary-red); }
-.category-icon{ width:36px; height:36px; display:flex; align-items:center; justify-content:center; color:inherit; }
+.category-item{ display:flex; align-items:center; flex:0 0 auto; font-size:12px; font-weight:700; color:var(--warm-gray); border-bottom:2px solid transparent; padding:8px 0; }
+ .category-item.active{ color:var(--charcoal); border-color:var(--primary-red); }
+
 
 /* ---------- SECTION HEADS ---------- */
 section{padding:56px 0;}
