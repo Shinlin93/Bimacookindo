@@ -4,7 +4,7 @@ import matHandle from '../assets/mat_handle.jpg'
 
 export default function PromoGrid() {
   return (
-    <section id="promo">
+    <main className="promo-page">
       <div className="wrap">
         <div className="section-head">
           <span className="eyebrow">Untuk Dapur Anda</span>
@@ -52,6 +52,6 @@ export default function PromoGrid() {
           </div>
         </div>
       </div>
-    </section>
+    </main>
   )
 }

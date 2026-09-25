@@ -69,7 +69,6 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--primary-red); outl
 
 .nav-links a{padding:6px 0; border-bottom:2px solid transparent;}
 .nav-links a:hover{border-color:var(--primary-red);}
-.nav-actions{display:flex; gap:20px; font-size:13px; font-weight:700;}
 @media (min-width:860px){ .nav-links{display:flex;} }
 
 /* ---------- CAMPAIGN HERO ---------- */
