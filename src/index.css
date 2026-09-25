@@ -73,14 +73,13 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--primary-red); outl
 @media (min-width:860px){ .nav-links{display:flex;} }
 
 /* ---------- CAMPAIGN HERO ---------- */
-.hero{ background:var(--primary-red); color:var(--paper-white); position:relative; overflow:hidden; padding:56px 0; }
-.hero-deco{ position:absolute; border-radius:50%; background:rgba(255,255,255,0.08); pointer-events:none; }
-.hero-deco.d1{ width:420px; height:420px; top:-160px; right:-120px; }
-.hero-deco.d2{ width:220px; height:220px; bottom:-90px; left:-60px; background:rgba(255,255,255,0.06); }
-.hero-inner{ position:relative; display:flex; flex-direction:column; gap:40px; }
-@media (min-width:900px){ .hero-inner{flex-direction:row; align-items:center; min-height:480px;} }
-.hero-copy{ max-width:520px; }
-@media (min-width:900px){ .hero-copy{flex:0 0 42%;} }
+.hero{ color:var(--paper-white); position:relative; overflow:hidden; min-height:560px; display:flex; align-items:center; background:var(--terracotta); }
+.hero-image{ isolation:isolate; }
+.hero-background{ position:absolute; inset:0; z-index:-2; width:100%; height:100%; object-fit:cover; object-position:center; }
+.hero-overlay{ position:absolute; inset:0; z-index:-1; background:linear-gradient(90deg, rgba(54,28,20,0.64) 0%, rgba(54,28,20,0.30) 34%, rgba(54,28,20,0.03) 62%, rgba(54,28,20,0) 100%); }
+.hero-inner{ position:relative; display:flex; align-items:center; width:100%; min-height:560px; }
+.hero-copy{ max-width:520px; text-shadow:0 2px 16px rgba(32,35,41,0.22); }
+@media (max-width:640px){ .hero{min-height:640px; align-items:flex-end;} .hero-background{object-position:58% center;} .hero-overlay{background:linear-gradient(0deg, rgba(54,28,20,0.78) 0%, rgba(54,28,20,0.28) 48%, rgba(54,28,20,0) 100%);} .hero-inner{min-height:640px; padding-bottom:48px;} }
 .hero-eyebrow{ display:inline-block; font-size:12px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; background:rgba(255,255,255,0.16); padding:6px 14px; border-radius:999px; margin-bottom:18px; }
 .hero-title{ font-size:38px; text-transform:uppercase; }
 @media (min-width:640px){ .hero-title{font-size:52px;} }

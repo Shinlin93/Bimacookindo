@@ -1,10 +1,14 @@
-import ArchitecturalProductScene from './ArchitecturalProductScene.jsx'
+const heroImage = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp_Image_2026-09-23_at.jpeg_2K_20260923130011.jpeg_2K_20260924120555.jpeg_2K_20260924195302-uwHum9iuF4hAgpU5dgdu2BwrYj1FCA.jpeg'
 
 export default function CampaignHero() {
   return (
-    <header className="hero">
-      <div className="hero-deco d1" />
-      <div className="hero-deco d2" />
+    <header className="hero hero-image">
+      <img
+        className="hero-background"
+        src={heroImage}
+        alt="Koleksi panci dan wajan Setara Cookware di atas pedestal"
+      />
+      <div className="hero-overlay" aria-hidden="true" />
       <div className="wrap hero-inner">
         <div className="hero-copy">
           <span className="hero-eyebrow">Koleksi Peralatan Masak 2026</span>
@@ -21,9 +25,6 @@ export default function CampaignHero() {
             <span />
             <span />
           </div>
-        </div>
-        <div className="hero-visual">
-          <ArchitecturalProductScene />
         </div>
       </div>
     </header>
