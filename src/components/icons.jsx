@@ -54,3 +54,31 @@ export function GridIcon() {
     </svg>
   )
 }
+
+export function InstagramIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="20" height="20" {...common}>
+      <rect x="3" y="3" width="18" height="18" rx="5" />
+      <circle cx="12" cy="12" r="4.2" />
+      <circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none" />
+    </svg>
+  )
+}
+
+export function WhatsAppIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="20" height="20" {...common}>
+      <path d="M4 20l1.3-3.8A8 8 0 1 1 8.8 19L4 20Z" />
+      <path d="M8.7 8.6c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.4.2.5.7 1.6.7 1.8.1.1.1.3 0 .4-.4.6-.8.9-.5 1.4.6 1.1 1.3 1.7 2.3 2.2.2.1.4.1.5-.1.2-.3.6-.9.8-1.1.1-.2.3-.2.5-.1.5.2 1.5.7 1.8.9.2.1.4.2.4.3 0 .5-.2 1.1-.6 1.5-.4.4-1.1.7-1.7.6-1.5-.2-3-.9-4.2-2-1-.9-1.8-2-2.3-3.2-.3-.6-.1-1.3.3-1.7Z" />
+    </svg>
+  )
+}
+
+export function TikTokIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="20" height="20" {...common}>
+      <path d="M14 3v10.5a3.2 3.2 0 1 1-2.4-3.1" />
+      <path d="M14 3c.3 2.4 2 4.2 4.4 4.5" />
+    </svg>
+  )
+}

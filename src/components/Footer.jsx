@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { InstagramIcon, WhatsAppIcon, TikTokIcon } from './icons.jsx'
 
 export default function Footer() {
   return (
@@ -7,9 +8,9 @@ export default function Footer() {
         <div className="wrap">
           <div className="word">SETARA</div>
           <div className="footer-social">
-            <a href="#" aria-label="Instagram">Instagram</a>
-            <a href="#" aria-label="WhatsApp">WhatsApp</a>
-            <a href="#" aria-label="TikTok">TikTok</a>
+            <a href="#" aria-label="Instagram" className="footer-social-icon"><InstagramIcon /></a>
+            <a href="#" aria-label="WhatsApp" className="footer-social-icon"><WhatsAppIcon /></a>
+            <a href="#" aria-label="TikTok" className="footer-social-icon"><TikTokIcon /></a>
           </div>
         </div>
       </div>
