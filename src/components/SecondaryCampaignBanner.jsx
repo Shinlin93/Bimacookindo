@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom'
-import featureImage from '../assets/feature_mm2.jpg'
+import featureImage from '../assets/rekomendasi-alat-masak.jpeg'
 
 export default function SecondaryCampaignBanner() {
   return (
     <section className="banner">
       <div className="wrap banner-grid">
         <div className="banner-img">
-          <img src={featureImage} alt="Panci stainless steel di atas meja dapur" />
+          <img src={featureImage} alt="Alat masak dengan tutup kaca dan pegangan kayu di atas meja dapur" />
         </div>
         <div>
-          <h2 className="banner-title">Butuh Rekomendasi Set Masak?</h2>
+          <h2 className="banner-title">Butuh Rekomendasi Alat Masak?</h2>
           <p className="banner-copy">
             Ceritakan kebutuhan dapur Anda, tim kami bantu pilihkan set yang
             paling cocok — langsung lewat WhatsApp.
