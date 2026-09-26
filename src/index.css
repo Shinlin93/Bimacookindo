@@ -69,6 +69,7 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--primary-red); outl
 .nav-links{display:none; gap:28px; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:0.03em;}
 .nav-links a{padding:6px 0; border-bottom:2px solid transparent;}
 .nav-links a:hover{border-color:var(--primary-red);}
+.nav-links a.active{color:var(--primary-red); border-color:var(--primary-red);}
 .nav-actions{display:flex; gap:20px; font-size:13px; font-weight:700;}
 @media (min-width:860px){ .nav-links{display:flex;} }
 
@@ -101,6 +102,38 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--primary-red); outl
 .scene-item:nth-child(3) .scene-base{background:var(--walnut);}
 .scene-item:nth-child(4) .scene-base{background:var(--terracotta);}
 .scene-item:nth-child(5) .scene-base{background:var(--burnt-terracotta);}
+
+/* ---------- RECIPE DETAIL ---------- */
+.recipe-detail{ margin-top:24px; display:grid; grid-template-columns:1fr; gap:24px; }
+@media (min-width:768px){ .recipe-detail{ grid-template-columns:1fr 1fr; align-items:center; gap:40px; } }
+.recipe-detail-media{ border-radius:16px; overflow:hidden; aspect-ratio:4/3; background:var(--warm-cream); }
+.recipe-detail-media img{ width:100%; height:100%; object-fit:cover; display:block; }
+.recipe-meta{ display:flex; flex-wrap:wrap; gap:20px; margin-top:20px; padding-top:20px; border-top:1px solid var(--soft-border); }
+.recipe-meta-item{ display:flex; flex-direction:column; gap:4px; }
+.recipe-meta-label{ font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:var(--warm-gray); font-weight:700; }
+.recipe-meta-value{ font-size:14px; font-weight:700; }
+
+.recipe-columns{ margin-top:48px; display:grid; grid-template-columns:1fr; gap:32px; }
+@media (min-width:768px){ .recipe-columns{ grid-template-columns:1fr 1.4fr; gap:48px; } }
+.recipe-ingredients,.recipe-steps{ background:var(--paper-white); border:1px solid var(--soft-border); border-radius:16px; padding:24px; }
+.recipe-ingredients ul,.recipe-steps ol{ margin:16px 0 0; padding-left:20px; display:flex; flex-direction:column; gap:10px; }
+.recipe-ingredients li,.recipe-steps li{ font-size:14px; line-height:1.5; color:var(--charcoal); }
+.recipe-steps li{ padding-left:4px; }
+
+/* ---------- INTERIOR PAGE HERO (Koleksi, Untuk Dapur Anda) ---------- */
+.page-hero{ min-height:280px; color:var(--paper-white); position:relative; overflow:hidden; display:flex; align-items:center; }
+.page-hero-image{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; }
+.page-hero-overlay{ position:absolute; inset:0; background:linear-gradient(90deg,rgba(32,35,41,0.86) 0%,rgba(32,35,41,0.68) 46%,rgba(32,35,41,0.32) 100%); }
+.page-hero-inner{ position:relative; width:100%; padding:48px 0; display:flex; flex-direction:column; gap:16px; }
+.page-hero-title{ font-size:34px; text-transform:uppercase; }
+@media (min-width:768px){ .page-hero-title{font-size:46px;} }
+.page-hero-inner .hero-sub{ margin-top:0; }
+
+/* CTA block used at the bottom of interior pages */
+.page-cta{ margin-top:44px; display:flex; flex-wrap:wrap; align-items:center; gap:18px; padding-top:32px; border-top:1px solid var(--soft-border); }
+
+/* filter buttons in Koleksi reuse .category-item but are real <button>s */
+.category-scroll button.category-item{ background:none; border:none; border-bottom:2px solid transparent; cursor:pointer; font-family:inherit; }
 
 /* ---------- CATEGORY STRIP ---------- */
 .category-strip{ background:var(--paper-white); border-bottom:1px solid var(--soft-border); }

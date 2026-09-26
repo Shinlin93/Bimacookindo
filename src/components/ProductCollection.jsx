@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { products } from '../data/products'
 import ProductCard from './ProductCard.jsx'
 
@@ -17,6 +18,10 @@ export default function ProductCollection() {
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
+        </div>
+        <div className="page-cta">
+          <p className="section-copy">Ingin memfilter berdasarkan kategori?</p>
+          <Link to="/koleksi" className="btn btn-pill btn-primary">Lihat Semua Koleksi</Link>
         </div>
       </div>
     </section>

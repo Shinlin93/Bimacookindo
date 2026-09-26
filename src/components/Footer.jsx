@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Footer() {
   return (
     <footer>
@@ -16,13 +18,13 @@ export default function Footer() {
           <div className="footer-cols">
             <div>
               <h4>Produk</h4>
-              <a href="#koleksi">Panci</a>
-              <a href="#koleksi">Wajan</a>
-              <a href="#koleksi">Set Panci</a>
+              <Link to="/">Home</Link>
+              <Link to="/koleksi">Koleksi</Link>
+              <Link to="/resep-promo-dapur">Resep/Promo Dapur</Link>
             </div>
             <div>
               <h4>Perusahaan</h4>
-              <a href="#tentang">Tentang Kami</a>
+              <a href="/#tentang">Tentang Kami</a>
               <a href="#">Karier</a>
               <a href="#">Kontak</a>
             </div>

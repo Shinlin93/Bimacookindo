@@ -1,12 +1,15 @@
+import { NavLink } from 'react-router-dom'
+
 export default function Navbar() {
   return (
     <nav className="nav">
       <div className="wrap nav-inner">
-        <div className="word">SETARA</div>
+        <NavLink to="/" className="word">SETARA</NavLink>
         <div className="nav-links">
-          <a href="#koleksi">Produk</a>
-          <a href="#promo">Promo</a>
-          <a href="#tentang">Tentang Kami</a>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/resep-promo-dapur">Resep/Promo Dapur</NavLink>
+          <NavLink to="/koleksi">Koleksi</NavLink>
+          <a href="/#tentang">Tentang Kami</a>
         </div>
         <div className="nav-actions">
           <a href="#" aria-label="Cari">Cari</a>

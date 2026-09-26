@@ -1,23 +1,36 @@
-import { useReveal } from './hooks/useReveal.js'
+import { useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx'
-import CampaignHero from './components/CampaignHero.jsx'
-import PromoGrid from './components/PromoGrid.jsx'
-import ProductCollection from './components/ProductCollection.jsx'
-import SecondaryCampaignBanner from './components/SecondaryCampaignBanner.jsx'
-import SocialContent from './components/SocialContent.jsx'
 import Footer from './components/Footer.jsx'
+import Home from './pages/Home.jsx'
+import ResepPromoDapur from './pages/ResepPromoDapur.jsx'
+import ResepDetail from './pages/ResepDetail.jsx'
+import Koleksi from './pages/Koleksi.jsx'
+
+// Scrolls to top on every route change (except when navigating to a #hash,
+// so anchor links like /#promo still jump to the right section).
+function ScrollToTop() {
+  const { pathname, hash } = useLocation()
+
+  useEffect(() => {
+    if (hash) return
+    window.scrollTo(0, 0)
+  }, [pathname, hash])
+
+  return null
+}
 
 export default function App() {
-  const containerRef = useReveal()
-
   return (
-    <div ref={containerRef}>
+    <div>
+      <ScrollToTop />
       <Navbar />
-      <CampaignHero />
-          <PromoGrid />
-      <ProductCollection />
-      <SecondaryCampaignBanner />
-      <SocialContent />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/resep-promo-dapur" element={<ResepPromoDapur />} />
+        <Route path="/resep-promo-dapur/:id" element={<ResepDetail />} />
+        <Route path="/koleksi" element={<Koleksi />} />
+      </Routes>
       <Footer />
     </div>
   )

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import featureImage from '../assets/feature_mm2.jpg'
 
 export default function SecondaryCampaignBanner() {
@@ -15,7 +16,7 @@ export default function SecondaryCampaignBanner() {
           </p>
           <div className="banner-ctas">
             <a href="#" className="btn btn-pill btn-primary">Chat via WhatsApp</a>
-            <a href="#koleksi" className="btn btn-editorial btn-outline">Lihat Koleksi</a>
+            <Link to="/koleksi" className="btn btn-editorial btn-outline">Lihat Koleksi</Link>
           </div>
         </div>
       </div>
