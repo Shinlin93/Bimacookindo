@@ -26,12 +26,6 @@ export default function Footer() {
               <Link to="/resep-promo-dapur">Resep/Promo Dapur</Link>
             </div>
             <div>
-              <h4>Perusahaan</h4>
-              <Link to="/panduan-pemesanan">Panduan Pemesanan</Link>
-              <a href="#">Karier</a>
-              <a href="#">Kontak</a>
-            </div>
-            <div>
               <h4>Bantuan</h4>
               <a href="#">Pengiriman</a>
               <a href="#">Pengembalian</a>
