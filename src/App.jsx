@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx'
 import ResepPromoDapur from './pages/ResepPromoDapur.jsx'
 import ResepDetail from './pages/ResepDetail.jsx'
 import Koleksi from './pages/Koleksi.jsx'
+import PanduanPemesanan from './pages/PanduanPemesanan.jsx'
 
 // Scrolls to top on every route change (except when navigating to a #hash,
 // so anchor links like /#promo still jump to the right section).
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/resep-promo-dapur" element={<ResepPromoDapur />} />
         <Route path="/resep-promo-dapur/:id" element={<ResepDetail />} />
         <Route path="/koleksi" element={<Koleksi />} />
+        <Route path="/panduan-pemesanan" element={<PanduanPemesanan />} />
       </Routes>
       <Footer />
     </div>

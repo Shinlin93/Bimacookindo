@@ -209,6 +209,32 @@ section{padding:56px 0;}
 .social-media{ border-radius:16px; overflow:hidden; aspect-ratio:4/3; }
 .social-media img{ width:100%; height:100%; object-fit:cover; }
 
+/* ---------- ORDERING GUIDE ---------- */
+.ordering-intro{padding-bottom:40px;}
+.ordering-title{text-transform:uppercase; max-width:720px;}
+.ordering-lead{font-size:17px; line-height:1.5; margin-top:4px; max-width:58ch;}
+.ordering-steps-section{background:var(--paper-white);}
+.ordering-steps{display:grid; grid-template-columns:1fr; gap:14px;}
+@media (min-width:640px){.ordering-steps{grid-template-columns:repeat(2,1fr);}}
+@media (min-width:1024px){.ordering-steps{grid-template-columns:repeat(4,1fr);}}
+.ordering-step{border-top:3px solid var(--primary-red); padding:18px 16px 20px; background:var(--warm-cream); min-height:190px;}
+.ordering-number{display:block; color:var(--primary-red); font-family:'Inter Tight'; font-size:24px; font-weight:900; margin-bottom:28px;}
+.ordering-step h3{font-size:21px; margin-bottom:10px;}
+.ordering-step p{font-size:13px; line-height:1.5; color:var(--warm-gray);}
+.ordering-note-section{background:var(--warm-orange);}
+.ordering-note-grid{display:grid; grid-template-columns:1fr; gap:28px; align-items:start;}
+@media (min-width:768px){.ordering-note-grid{grid-template-columns:1fr 1fr; gap:72px;}}
+.ordering-note-grid .h-section{margin-top:10px; max-width:13ch;}
+.ordering-checklist{background:var(--paper-white); border-radius:16px; padding:22px; display:flex; flex-direction:column; gap:18px;}
+.ordering-check{display:flex; align-items:flex-start; gap:12px; border-bottom:1px solid var(--soft-border); padding-bottom:18px;}
+.ordering-check:last-child{border-bottom:0; padding-bottom:0;}
+.ordering-check span{display:flex; align-items:center; justify-content:center; width:22px; height:22px; flex:0 0 auto; border-radius:50%; background:var(--primary-red); color:var(--paper-white); font-size:13px; font-weight:800;}
+.ordering-check p{font-size:14px; line-height:1.45;}
+.ordering-cta-section{padding-top:48px;}
+.ordering-cta{display:flex; flex-direction:column; gap:24px; align-items:flex-start; padding-bottom:8px;}
+@media (min-width:640px){.ordering-cta{flex-direction:row; align-items:center; justify-content:space-between;}}
+.ordering-cta .h-section{margin-top:10px;}
+
 /* ---------- FOOTER ---------- */
 .footer-primary{ background:var(--primary-red); color:var(--paper-white); padding:32px 0; }
 .footer-primary .wrap{ display:flex; flex-direction:column; gap:16px; }

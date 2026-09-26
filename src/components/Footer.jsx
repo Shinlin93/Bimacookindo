@@ -27,7 +27,7 @@ export default function Footer() {
             </div>
             <div>
               <h4>Perusahaan</h4>
-              <a href="/#tentang">Tentang Kami</a>
+              <Link to="/panduan-pemesanan">Panduan Pemesanan</Link>
               <a href="#">Karier</a>
               <a href="#">Kontak</a>
             </div>

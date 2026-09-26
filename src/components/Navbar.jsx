@@ -9,7 +9,7 @@ export default function Navbar() {
           <NavLink to="/">Home</NavLink>
           <NavLink to="/resep-promo-dapur">Resep/Promo Dapur</NavLink>
           <NavLink to="/koleksi">Koleksi</NavLink>
-          <a href="/#tentang">Tentang Kami</a>
+          <NavLink to="/panduan-pemesanan">Panduan Pemesanan</NavLink>
         </div>
         <div className="nav-actions">
           <a href="#" aria-label="Cari">Cari</a>
