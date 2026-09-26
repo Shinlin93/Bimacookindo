@@ -7,6 +7,7 @@ import ResepPromoDapur from './pages/ResepPromoDapur.jsx'
 import ResepDetail from './pages/ResepDetail.jsx'
 import Koleksi from './pages/Koleksi.jsx'
 import PanduanPemesanan from './pages/PanduanPemesanan.jsx'
+import WhatsAppFloat from './components/WhatsAppFloat.jsx'
 
 // Scrolls to top on every route change (except when navigating to a #hash,
 // so anchor links like /#promo still jump to the right section).
@@ -34,6 +35,7 @@ export default function App() {
         <Route path="/panduan-pemesanan" element={<PanduanPemesanan />} />
       </Routes>
       <Footer />
+      <WhatsAppFloat />
     </div>
   )
 }

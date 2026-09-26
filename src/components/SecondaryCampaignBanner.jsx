@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import featureImage from '../assets/rekomendasi-alat-masak.jpeg'
+import { whatsappUrl } from './WhatsAppFloat.jsx'
 
 export default function SecondaryCampaignBanner() {
   return (
@@ -15,7 +16,7 @@ export default function SecondaryCampaignBanner() {
             paling cocok — langsung lewat WhatsApp.
           </p>
           <div className="banner-ctas">
-            <a href="#" className="btn btn-pill btn-primary">Chat via WhatsApp</a>
+            <a href={whatsappUrl} target="_blank" rel="noreferrer" className="btn btn-pill btn-primary">Chat via WhatsApp</a>
             <Link to="/koleksi" className="btn btn-editorial btn-outline">Lihat Koleksi</Link>
           </div>
         </div>

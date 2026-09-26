@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import iconInstagram from '../assets/icon_instagram.png'
 import iconTiktok from '../assets/icon_tiktok.png'
 import iconWhatsapp from '../assets/icon_whatsapp.png'
+import { whatsappUrl } from './WhatsAppFloat.jsx'
 
 export default function Footer() {
   return (
@@ -12,7 +13,7 @@ export default function Footer() {
           <div className="footer-social">
             <a href="#" aria-label="Instagram" className="footer-social-icon"><img src={iconInstagram} alt="Instagram" /></a>
             <a href="#" aria-label="TikTok" className="footer-social-icon"><img src={iconTiktok} alt="TikTok" /></a>
-            <a href="#" aria-label="WhatsApp" className="footer-social-icon"><img src={iconWhatsapp} alt="WhatsApp" /></a>
+            <a href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp" className="footer-social-icon"><img src={iconWhatsapp} alt="WhatsApp" /></a>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import p1Bima from '../assets/p1_bima.jpg'
 import p2Wppink from '../assets/p2_wppink.jpg'
 import matHandle from '../assets/mat_handle.jpg'
+import { whatsappUrl } from './WhatsAppFloat.jsx'
 
 export default function PromoGrid() {
   return (
@@ -49,7 +50,7 @@ export default function PromoGrid() {
             <span className="promo-eyebrow">Konsultasi</span>
             <h3 className="promo-title">Butuh Bantuan Memilih?</h3>
             <p className="promo-copy">Tim kami siap membantu menentukan alat masak yang sesuai kebutuhan Anda.</p>
-            <a href="#" className="promo-link">Hubungi via WhatsApp →</a>
+            <a href={whatsappUrl} target="_blank" rel="noreferrer" className="promo-link">Hubungi via WhatsApp →</a>
           </div>
         </div>
 
