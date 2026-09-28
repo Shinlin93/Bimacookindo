@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-const recommendationImage = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1.jpg_2K_20260925113150-Q26CQ50OMi9TAzpiNv75UVYhqVPTav.jpeg'
+const recommendationImage = '/images/flyer-set-masak.jpeg'
 
 export default function SecondaryCampaignBanner() {
   return (
