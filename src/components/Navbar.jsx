@@ -11,10 +11,6 @@ export default function Navbar() {
           <NavLink to="/koleksi">Koleksi</NavLink>
           <NavLink to="/panduan-pemesanan">Panduan Pemesanan</NavLink>
         </div>
-        <div className="nav-actions">
-          <a href="#" aria-label="Cari">Cari</a>
-          <a href="#" aria-label="Keranjang">Keranjang</a>
-        </div>
       </div>
     </nav>
   )
