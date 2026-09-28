@@ -11,8 +11,8 @@ export default function SocialContent() {
     <section id="tentang">
       <div className="wrap">
         <div className="section-head">
-          <span className="eyebrow">Cerita Dapur</span>
-          <h2 className="h-section">Dari Dapur ke Dapur</h2>
+          <span className="eyebrow">Testimoni</span>
+          <h2 className="h-section">Pengalaman Langsung dari Dapur</h2>
         </div>
         <div className="social-grid">
           <div className="social-cards">

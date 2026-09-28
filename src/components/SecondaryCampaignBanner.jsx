@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
-import featureImage from '../assets/feature_mm2.jpg'
+
+const recommendationImage = '/images/flyer-set-masak.jpeg'
 
 export default function SecondaryCampaignBanner() {
   return (
     <section className="banner">
       <div className="wrap banner-grid">
         <div className="banner-img">
-          <img src={featureImage} alt="Panci stainless steel di atas meja dapur" />
+          <img src={recommendationImage} alt="Panci Primaboga dengan desain produk dan sketsa teknik" />
         </div>
         <div>
           <h2 className="banner-title">Butuh Rekomendasi Set Masak?</h2>
