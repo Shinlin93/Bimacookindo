@@ -9,10 +9,10 @@ export default function CampaignHero() {
       <div className="hero-overlay" />
       <div className="wrap hero-inner">
         <div className="hero-copy">
-          <span className="hero-eyebrow">Koleksi Peralatan Masak 2026</span>
-          <h1 className="hero-title">Masak Lebih Baik, Setiap Hari</h1>
+          <span className="hero-eyebrow">✳ Memasak dengan lebih bermakna</span>
+          <h1 className="hero-title">Alat Masak yang Tumbuh Bersama Dapur Anda.</h1>
           <p className="hero-sub">
-            Kualitas yang dirancang untuk menemani setiap momen memasak.
+            Material yang jujur, bentuk yang tenang, dan kualitas yang menemani setiap hidangan.
           </p>
           <div className="hero-ctas">
             <Link to="/koleksi" className="btn btn-pill btn-on-color">Lihat Koleksi</Link>

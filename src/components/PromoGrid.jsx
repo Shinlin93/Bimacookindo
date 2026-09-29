@@ -8,10 +8,10 @@ export default function PromoGrid() {
     <section id="promo">
       <div className="wrap">
         <div className="section-head">
-          <span className="eyebrow">Resep/Promo Dapur</span>
-          <h2 className="h-section">Resep &amp; Inspirasi</h2>
+          <span className="eyebrow">✳ Dibuat untuk keseharian</span>
+          <h2 className="h-section">Dirancang untuk Momen yang Berarti.</h2>
           <p className="section-copy">
-            Ide masakan singkat yang bisa dibuat dengan koleksi alat masak Setara.
+            Setara menyatukan material yang tahan lama dan desain yang terasa natural untuk membantu Anda memasak dengan lebih percaya diri.
           </p>
         </div>
 
