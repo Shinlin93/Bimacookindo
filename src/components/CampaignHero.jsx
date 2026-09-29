@@ -1,25 +1,31 @@
 import { Link } from 'react-router-dom'
 
-const heroImage = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp_Image_2026-09-23_at.jpeg_2K_20260923130011.jpeg_2K_20260924120555.jpeg_2K_20260924195302-T5iJvgzeDwAEOkN185U9U0uBY4lTyG.jpeg'
+const heroImage = 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/820024554_17988939822114903_1224810735372321576_n-UCUN8LnkGSEN8sBbCLpdApGtnJRNb1.jpg'
 
 export default function CampaignHero() {
   return (
-    <header className="hero">
-      <img className="hero-image" src={heroImage} alt="Koleksi panci dan wajan di atas podium" />
-      <div className="hero-overlay" />
-      <div className="wrap hero-inner">
-        <div className="hero-copy">
-          <span className="hero-eyebrow">✳ Memasak dengan lebih bermakna</span>
-          <h1 className="hero-title">Alat Masak yang Tumbuh Bersama Dapur Anda.</h1>
-          <p className="hero-sub">
-            Material yang jujur, bentuk yang tenang, dan kualitas yang menemani setiap hidangan.
-          </p>
-          <div className="hero-ctas">
-            <Link to="/koleksi" className="btn btn-pill btn-on-color">Lihat Koleksi</Link>
-            <Link to="/resep-promo-dapur" className="btn btn-editorial btn-outline">Jelajahi Produk</Link>
-          </div>
+    <header className="hero stillpage-hero">
+      <nav className="stillpage-nav" aria-label="Navigasi utama">
+        <Link to="/" className="stillpage-brand"><span aria-hidden="true">✦</span> SETARA</Link>
+        <div className="stillpage-links">
+          <Link to="/koleksi">Koleksi</Link><i aria-hidden="true" />
+          <Link to="/resep-promo-dapur">Inspirasi</Link><i aria-hidden="true" />
+          <Link to="/panduan-pemesanan">Cara Memesan</Link><i aria-hidden="true" />
+          <Link to="/">Tentang Kami</Link>
         </div>
+        <Link to="/koleksi" className="stillpage-start">Mulai Belanja</Link>
+      </nav>
+      <div className="stillpage-grid" aria-hidden="true" />
+      <div className="stillpage-copy">
+        <p className="stillpage-kicker">35.6762° N</p>
+        <h1>Alat masak <em>untuk</em><br />satu hidangan<br />setiap waktu.</h1>
+        <p className="stillpage-east">139.6503° E</p>
       </div>
+      <div className="stillpage-intro">
+        <p>Peralatan dapur yang tenang untuk memasak, berbagi, dan menciptakan hidangan yang layak diingat.</p>
+        <Link to="/koleksi" className="stillpage-explore"><span aria-hidden="true">↓</span> Jelajahi</Link>
+      </div>
+      <img className="hero-image stillpage-image" src={heroImage} alt="Pohon tunggal di tengah padang berbintik warna" />
     </header>
   )
 }

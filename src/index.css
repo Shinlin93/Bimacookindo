@@ -103,6 +103,25 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--primary-red); outl
 .scene-item:nth-child(4) .scene-base{background:var(--terracotta);}
 .scene-item:nth-child(5) .scene-base{background:var(--burnt-terracotta);}
 
+/* ---------- STILLPAGE-INSPIRED LANDING HERO ---------- */
+.stillpage-hero{min-height:100vh; margin:0; background:#f6f6e9; color:#0a0b0a; display:block; position:relative; isolation:isolate; overflow:hidden;}
+.stillpage-grid{position:absolute; inset:0; z-index:-1; opacity:.58; background-image:radial-gradient(rgba(67,145,133,.18) .8px, transparent .8px),linear-gradient(rgba(25,32,28,.16) 1px, transparent 1px),linear-gradient(90deg,rgba(25,32,28,.16) 1px, transparent 1px); background-size:7px 7px,25% 100%,25% 100%; background-position:0 0,0 0,0 0; mask-image:linear-gradient(to bottom,black 0%,black 70%,transparent 100%);}
+.stillpage-nav{height:150px; padding:0 6.5vw; display:flex; align-items:center; justify-content:space-between; border-bottom:1px dashed rgba(25,32,28,.2); position:relative; z-index:3;}
+.stillpage-brand{font-family:'Inter Tight'; font-size:24px; font-weight:900; letter-spacing:-.05em; display:flex; align-items:center; gap:12px;}
+.stillpage-brand span{display:grid; place-items:center; width:43px; height:43px; border-radius:50%; background:#080908; color:#fff; font-size:25px;}
+.stillpage-links{display:flex; align-items:center; gap:25px; padding:18px 45px; border-radius:10px; background:rgba(255,255,255,.88); box-shadow:0 8px 24px rgba(29,37,29,.06); font-size:15px; text-transform:uppercase; letter-spacing:.06em;}
+.stillpage-links i{width:5px; height:5px; border-radius:50%; background:#d5d5cc;}
+.stillpage-start{padding:18px 27px; background:#080908; color:#fff; border-radius:999px; text-transform:uppercase; letter-spacing:.08em; font-size:14px;}
+.stillpage-copy{position:relative; z-index:2; text-align:center; padding:38px 20px 0;}
+.stillpage-copy h1{font-size:clamp(48px,7.6vw,112px); line-height:.98; letter-spacing:-.07em; text-transform:none; font-weight:800;}
+.stillpage-kicker,.stillpage-east{position:absolute; top:315px; font-family:monospace; color:#70756e; font-size:15px; letter-spacing:.08em;}
+.stillpage-kicker{left:6.5vw;}.stillpage-east{right:6.5vw;}
+.stillpage-intro{position:absolute; z-index:3; left:6.5vw; bottom:27%; width:260px; font-size:18px; line-height:1.45;}
+.stillpage-explore{display:flex; align-items:center; gap:18px; margin-top:34px; text-transform:uppercase; font-size:15px; letter-spacing:.08em;}
+.stillpage-explore span{display:grid; place-items:center; width:43px; height:43px; border:1px solid #d8d9d0; border-radius:50%; background:#fff; font-size:25px;}
+.stillpage-image{position:absolute; z-index:1; left:0; right:0; bottom:-4px; width:100%; height:42%; object-fit:cover; object-position:center 64%; mix-blend-mode:multiply; opacity:.96;}
+@media (max-width:859px){.stillpage-nav{height:auto; padding:22px 20px; gap:18px; flex-wrap:wrap}.stillpage-links{order:3; width:100%; justify-content:center; padding:12px 10px; gap:10px; font-size:10px}.stillpage-links i{display:none}.stillpage-brand{font-size:19px}.stillpage-brand span{width:34px;height:34px;font-size:19px}.stillpage-start{padding:12px 15px;font-size:10px}.stillpage-copy{padding-top:45px}.stillpage-kicker,.stillpage-east{top:205px;font-size:10px}.stillpage-intro{top:auto;bottom:27%;left:20px;width:210px;font-size:14px}.stillpage-image{height:36%;}.stillpage-copy h1{font-size:clamp(44px,11vw,76px)}}
+
 /* ---------- RECIPE DETAIL ---------- */
 .recipe-detail{ margin-top:24px; display:grid; grid-template-columns:1fr; gap:24px; }
 @media (min-width:768px){ .recipe-detail{ grid-template-columns:1fr 1fr; align-items:center; gap:40px; } }
