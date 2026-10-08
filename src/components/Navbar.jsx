@@ -1,17 +1,25 @@
 import { NavLink } from 'react-router-dom'
 
+const links = [
+  ['Tableware', '/koleksi'],
+  ['Kitchenware', '/'],
+  ['Chef Wear', '/koleksi'],
+  ['Furniture', '/koleksi'],
+  ['Sale', '/resep-promo-dapur'],
+  ['Gift', '/koleksi'],
+  ['Expert Directory', '/panduan-pemesanan'],
+]
+
 export default function Navbar() {
   return (
-    <nav className="nav">
+    <header className="nav">
       <div className="wrap nav-inner">
-        <NavLink to="/" className="word">SETARA</NavLink>
-        <div className="nav-links">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/resep-promo-dapur">Resep/Promo Dapur</NavLink>
-          <NavLink to="/koleksi">Koleksi</NavLink>
-          <NavLink to="/panduan-pemesanan">Panduan Pemesanan</NavLink>
-        </div>
+        <NavLink to="/" className="word"><span>BREWSUNIQ</span><small>HORECA SUPPLIER</small></NavLink>
+        <nav className="nav-links" aria-label="Menu utama">
+          {links.map(([label, path]) => <NavLink key={label} to={path} end={label === 'Kitchenware'}>{label}</NavLink>)}
+        </nav>
+        <div className="nav-actions"><button type="button" aria-label="Cari">⌕</button><button type="button" aria-label="Keranjang">Bag (0)</button></div>
       </div>
-    </nav>
+    </header>
   )
 }

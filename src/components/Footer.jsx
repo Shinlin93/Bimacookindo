@@ -8,7 +8,7 @@ export default function Footer() {
     <footer>
       <div className="footer-primary">
         <div className="wrap">
-          <div className="word">SETARA</div>
+          <div className="word"><span>BREWSUNIQ</span><small>HORECA SUPPLIER</small></div>
           <div className="footer-social">
             <a href="#" aria-label="Instagram" className="footer-social-icon"><img src={iconInstagram} alt="Instagram" /></a>
             <a href="#" aria-label="TikTok" className="footer-social-icon"><img src={iconTiktok} alt="TikTok" /></a>
@@ -38,7 +38,7 @@ export default function Footer() {
               <a href="#">Kebijakan Privasi</a>
             </div>
           </div>
-          <div className="footer-bottom">© 2026 Setara. Semua hak dilindungi.</div>
+          <div className="footer-bottom">© 2026 Brewsuniq. Semua hak dilindungi.</div>
         </div>
       </div>
     </footer>
