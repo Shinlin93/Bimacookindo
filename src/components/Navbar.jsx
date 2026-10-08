@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <header className="nav">
       <div className="wrap nav-inner">
-        <NavLink to="/" className="word"><span>BREWSUNIQ</span><small>HORECA SUPPLIER</small></NavLink>
+        <NavLink to="/" className="word"><span>SETARA</span><small>KITCHEN &amp; HORECA</small></NavLink>
         <nav className="nav-links" aria-label="Menu utama">
           {links.map(([label, path]) => <NavLink key={label} to={path} end={label === 'Kitchenware'}>{label}</NavLink>)}
         </nav>

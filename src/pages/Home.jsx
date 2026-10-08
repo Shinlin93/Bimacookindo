@@ -63,9 +63,9 @@ export default function Home() {
 
       <section className="catalog-intro">
         <div className="wrap">
-          <p className="catalog-kicker">Brewsuniq · HORECA Supplier sejak 2016</p>
-          <h1>Kitchenware</h1>
-          <p className="catalog-description">Perlengkapan dapur pilihan untuk restoran, hotel, kafe, dan rumah Anda.</p>
+          <p className="catalog-kicker">Setara · Kitchen &amp; HORECA sejak 2016</p>
+          <h1>Perlengkapan Dapur</h1>
+          <p className="catalog-description">Perlengkapan dapur pilihan untuk bisnis kuliner, hospitality, dan rumah modern.</p>
         </div>
       </section>
 

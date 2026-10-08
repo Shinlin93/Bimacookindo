@@ -8,7 +8,7 @@ export default function Footer() {
     <footer>
       <div className="footer-primary">
         <div className="wrap">
-          <div className="word"><span>BREWSUNIQ</span><small>HORECA SUPPLIER</small></div>
+          <div className="word"><span>SETARA</span><small>KITCHEN &amp; HORECA</small></div>
           <div className="footer-social">
             <a href="#" aria-label="Instagram" className="footer-social-icon"><img src={iconInstagram} alt="Instagram" /></a>
             <a href="#" aria-label="TikTok" className="footer-social-icon"><img src={iconTiktok} alt="TikTok" /></a>
